@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheet/style.css">
+    <title>Express Intro</title>
+</head>
+<body>
+    <div>
+        <h1>Welcome to my App: Daisy Warren</h1>
+        <h3>Here are some facts about myself:</h3>
+    </div>
+    <div>
+        <ul>
+            <li>The California desert is where I currently call home.</li>
+            <li>I love spending time cooking, dancing, reading and immersing myself in nature.</li>
+            <li>Making monthly music playlists on Spotify is a favorite ritual because music keeps me going in everyday life.</li>
+        </ul>
+    </div>
+    <div>
+        <h3>These are my top 5 favorite songs this month:</h3>
+        <ol>
+            <li>Hémisphère by Paradis</li>
+            <li>Ubuntu Tutu by Olefonken</li>
+            <li>Baby Mind by Emapea</li>
+            <li>Gardens by AYLØ</li>
+            <li>Oboe by Camel Power Club</li>
+        </ol>
+    </div>
+    
+    <hr />
+    <% if (user) { %>
+        <div>
+            Welcome back <%- user -%>
+        </div>
+        <% } else { %>
+            <% } %>
+            <hr />
+            <ul>
+                <% teams.forEach(function(item) { %>
+                    <li>
+                        <%- item.team -%>
+                    </li>
+                    <% }); %>
+                </ul>
+                <hr />
+                
+
+                <script src="/app.js"></script>
+                <script src="/javascripts/method.js"></script>
+            </body>
+            </html>

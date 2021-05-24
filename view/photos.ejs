@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheet/style.css">
+    <title>Photos</title>
+</head>
+<body>
+    <div>
+        <h2>A Photographic Documentation into Daisy's Favorite Places</h2>
+    </div>
+    
+    <hr />
+    <% if (user) { %>
+        <div>
+            Check below <%- user -%>
+        </div>
+        <% } else { %>
+            <% } %>
+            <hr />
+            <ul>
+                <% teams.forEach(function(item) { %>
+                    <li>
+                        <%- item.team -%>
+                    </li>
+                    <% }); %>
+                </ul>
+                <hr />
+                
+                <div>
+                    <img src="/images/grandvelas.jpg" alt="Riviera Nayarit">
+                </div>
+
+                <div>
+                    <img src="/images/SB.jpeg" alt="Santa Barbara">
+                </div>
+
+                <div>
+                    <img src="/images/seattle.jpeg" alt="Seattle Public Library">
+                </div>
+                
+            </body>
+            </html>
